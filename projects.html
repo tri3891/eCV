@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Deep Learning-based Object Detection for Microalgae — YOLO model application for identifying and classifying microalgae species.">
+  <title>eCVWeb — Microalgae Object Detection</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="page-transition">
+
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-gradient-orb bg-gradient-orb--cyan"></div>
+  <div class="bg-gradient-orb bg-gradient-orb--purple"></div>
+  <div class="bg-gradient-orb bg-gradient-orb--emerald"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon">🔬</div>
+        eCVWeb
+      </a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html" class="navbar__link">About</a></li>
+        <li><a href="projects.html" class="navbar__link active">Projects</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Project Hero -->
+  <section class="project-hero">
+    <div class="project-hero__container">
+      <div class="project-hero__breadcrumb animate-on-scroll">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <span class="project-hero__breadcrumb-sep">/</span>
+        <span>Projects</span>
+        <span class="project-hero__breadcrumb-sep">/</span>
+        <span style="color: var(--text-secondary);">Microalgae Detection</span>
+      </div>
+
+      <div class="project-hero__tags animate-on-scroll">
+        <span class="project-tag">Deep Learning</span>
+        <span class="project-tag project-tag--purple">Object Detection</span>
+        <span class="project-tag project-tag--green">Microalgae</span>
+      </div>
+
+      <h1 class="project-hero__title animate-on-scroll">
+        Deep Learning-based<br>
+        <span class="hero__title-gradient">Object Detection in Microalgae</span>
+      </h1>
+
+      <p class="project-hero__description animate-on-scroll">
+        Applying state-of-the-art YOLO (You Only Look Once) deep learning models to automatically 
+        detect, identify, and classify microalgae species from microscopic images. This project 
+        demonstrates how modern computer vision can accelerate biological research and enable 
+        real-time monitoring of microalgae populations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="section">
+    <div class="section__container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">Highlights</span>
+        <h2 class="section__title">Key Features</h2>
+      </div>
+
+      <div class="features-grid animate-on-scroll">
+        <div class="feature-card">
+          <div class="feature-card__icon">🧠</div>
+          <h3 class="feature-card__title">YOLO Architecture</h3>
+          <p class="feature-card__text">
+            Utilizing the YOLO (You Only Look Once) family of models for real-time 
+            object detection with high accuracy and speed.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🔬</div>
+          <h3 class="feature-card__title">Microalgae Species</h3>
+          <p class="feature-card__text">
+            Trained on diverse microalgae datasets for multi-class detection and 
+            classification of different algae species.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">⚡</div>
+          <h3 class="feature-card__title">Real-time Processing</h3>
+          <p class="feature-card__text">
+            Capable of processing microscopic images and video streams in real-time 
+            for live monitoring applications.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">📊</div>
+          <h3 class="feature-card__title">High Accuracy</h3>
+          <p class="feature-card__text">
+            Achieving state-of-the-art detection accuracy through careful data 
+            augmentation and model optimization techniques.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="section" id="videos" style="background: rgba(255,255,255,0.01);">
+    <div class="section__container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">Video Tutorials</span>
+        <h2 class="section__title">Learn More</h2>
+        <p class="section__description">
+          Watch these video presentations to understand the fundamentals of object detection 
+          and how YOLO models are applied to microalgae research.
+        </p>
+      </div>
+
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-card animate-on-scroll">
+          <div class="video-card__player">
+            <iframe 
+              src="https://www.youtube.com/embed/MyvOfDFZvgE" 
+              title="Introduction to Object Detection" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-card__info">
+            <div class="video-card__number">1</div>
+            <h3 class="video-card__title">Introduction to Object Detection</h3>
+            <p class="video-card__description">
+              An overview of object detection in computer vision — understanding the fundamentals 
+              of how deep learning models detect and localize objects within images and video streams.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card animate-on-scroll">
+          <div class="video-card__player">
+            <iframe 
+              src="https://www.youtube.com/embed/CzHP7IqvJes" 
+              title="YOLO Model for Microalgae Detection" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="video-card__info">
+            <div class="video-card__number">2</div>
+            <h3 class="video-card__title">YOLO Model in Microalgae</h3>
+            <p class="video-card__description">
+              Applying the YOLO deep learning model specifically for microalgae detection and 
+              classification — demonstrating real-world results on microscopic algae samples.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Stack -->
+  <section class="section">
+    <div class="section__container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">Tech Stack</span>
+        <h2 class="section__title">Technologies Used</h2>
+      </div>
+
+      <div class="skills animate-on-scroll" style="margin-top: 0;">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">YOLOv8</span>
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">Ultralytics</span>
+        <span class="skill-tag">OpenCV</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">CUDA</span>
+        <span class="skill-tag">Roboflow</span>
+        <span class="skill-tag">Google Colab</span>
+        <span class="skill-tag">LabelImg</span>
+        <span class="skill-tag">Streamlit</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: rgba(255,255,255,0.01);">
+    <div class="section__container" style="text-align: center;">
+      <div class="animate-on-scroll">
+        <span class="section__tag">Interested?</span>
+        <h2 class="section__title" style="margin-bottom: var(--space-lg);">Want to Learn More?</h2>
+        <p class="section__description" style="margin-bottom: var(--space-2xl);">
+          Feel free to reach out for collaboration opportunities or questions about this project.
+        </p>
+        <div class="hero__actions" style="animation: none; opacity: 1;">
+          <a href="index.html#contact" class="btn btn--primary">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+          <a href="index.html" class="btn btn--ghost">
+            <i class="fas fa-arrow-left"></i> Back to About
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">© <span class="footer__year">2026</span> eCVWeb · Built with ❤️</p>
+      <div class="footer__links">
+        <a href="index.html" class="footer__link">About</a>
+        <a href="projects.html" class="footer__link">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
