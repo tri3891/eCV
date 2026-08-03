@@ -107,6 +107,43 @@
     </div>
   </section>
 
+  <!-- Training Results -->
+  <section class="section" style="background: rgba(255,255,255,0.01);">
+    <div class="section__container">
+      <div class="section__header animate-on-scroll">
+        <span class="section__tag">Model Performance</span>
+        <h2 class="section__title">Training Results</h2>
+        <p class="section__description">
+          Visualizations of the YOLO model's training process and prediction accuracy on the microalgae dataset.
+        </p>
+      </div>
+      
+      <div class="features-grid animate-on-scroll" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div class="feature-card">
+          <img src="yolo26_algae_260803/results.png" alt="Training Curves" style="border-radius: var(--radius-sm); margin-bottom: var(--space-md);">
+          <h3 class="feature-card__title">Training Metrics</h3>
+          <p class="feature-card__text">
+            Box loss, classification loss, and mAP metrics over training epochs, demonstrating stable convergence.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img src="yolo26_algae_260803/val_batch0_pred.jpg" alt="Validation Predictions" style="border-radius: var(--radius-sm); margin-bottom: var(--space-md);">
+          <h3 class="feature-card__title">Validation Predictions</h3>
+          <p class="feature-card__text">
+            Sample predictions on the validation set, showing successful identification and bounding box regression.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img src="yolo26_algae_260803/confusion_matrix_normalized.png" alt="Confusion Matrix" style="border-radius: var(--radius-sm); margin-bottom: var(--space-md);">
+          <h3 class="feature-card__title">Confusion Matrix</h3>
+          <p class="feature-card__text">
+            Normalized confusion matrix indicating strong classification performance across all target classes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Video Section -->
   <section class="section" id="videos" style="background: rgba(255,255,255,0.01);">
     <div class="section__container">
@@ -158,6 +195,25 @@
             <p class="video-card__description">
               Applying the YOLO deep learning model specifically for microalgae detection and 
               classification.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video 3: Python Interface Demo -->
+        <div class="video-card animate-on-scroll">
+          <div class="video-card__player" style="background: var(--bg-secondary); display: flex; align-items: center; justify-content: center; position: relative;">
+            <!-- Placeholder for YouTube iframe -->
+            <div style="position: absolute; text-align: center; color: var(--text-muted); width: 100%;">
+              <i class="fab fa-youtube fa-3x" style="margin-bottom: 15px; color: var(--border-glass);"></i>
+              <p style="font-weight: 500;">Python Interface Demo</p>
+              <p style="font-size: 0.8rem; margin-top: 5px;">(Video link will be updated soon)</p>
+            </div>
+          </div>
+          <div class="video-card__info">
+            <div class="video-card__number">3</div>
+            <h3 class="video-card__title">Python Interface Demo</h3>
+            <p class="video-card__description">
+              A demonstration of the custom Python testing interface, showing real-time inference, results visualization, and user interaction.
             </p>
           </div>
         </div>
