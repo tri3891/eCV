@@ -432,10 +432,11 @@ img {
 }
 
 .profile__avatar {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center top;
   border: 3px solid transparent;
   background: linear-gradient(var(--bg-secondary), var(--bg-secondary)) padding-box,
               var(--gradient-primary) border-box;
@@ -1009,8 +1010,8 @@ img {
   }
 
   .profile__avatar {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
   }
 }
 
