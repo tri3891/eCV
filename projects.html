@@ -180,21 +180,21 @@
       
       <div class="features-grid animate-on-scroll" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
         <div class="feature-card">
-          <img src="yolo26_algae_260803/results.png" alt="Training Curves" style="border-radius: var(--radius-sm); margin-bottom: var(--space-md);">
+          <img src="yolo26_algae_260803/results.png" alt="Training Curves" class="zoomable-image" style="border-radius: var(--radius-sm); margin-bottom: var(--space-md); cursor: pointer;">
           <h3 class="feature-card__title">Training Metrics</h3>
           <p class="feature-card__text">
             Box loss, classification loss, and mAP metrics over training epochs, demonstrating stable convergence.
           </p>
         </div>
         <div class="feature-card">
-          <img src="yolo26_algae_260803/val_batch0_pred.jpg" alt="Validation Predictions" style="border-radius: var(--radius-sm); margin-bottom: var(--space-md);">
+          <img src="yolo26_algae_260803/val_batch0_pred.jpg" alt="Validation Predictions" class="zoomable-image" style="border-radius: var(--radius-sm); margin-bottom: var(--space-md); cursor: pointer;">
           <h3 class="feature-card__title">Validation Predictions</h3>
           <p class="feature-card__text">
             Sample predictions on the validation set, showing successful identification and bounding box regression.
           </p>
         </div>
         <div class="feature-card">
-          <img src="yolo26_algae_260803/confusion_matrix_normalized.png" alt="Confusion Matrix" style="border-radius: var(--radius-sm); margin-bottom: var(--space-md);">
+          <img src="yolo26_algae_260803/confusion_matrix_normalized.png" alt="Confusion Matrix" class="zoomable-image" style="border-radius: var(--radius-sm); margin-bottom: var(--space-md); cursor: pointer;">
           <h3 class="feature-card__title">Confusion Matrix</h3>
           <p class="feature-card__text">
             Normalized confusion matrix indicating strong classification performance across all target classes.
@@ -283,5 +283,12 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="modal__close">&times;</span>
+    <img class="modal__content" id="modalImg">
+    <div id="modalCaption"></div>
+  </div>
 </body>
 </html>
